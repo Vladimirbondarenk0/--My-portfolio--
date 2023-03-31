@@ -1,0 +1,60 @@
+.btn {
+    color-scheme: dark;
+    margin-top: 6px;
+    border: none;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    color: $second-color;
+    background-size: 200% 100%;
+    transition-duration: .3s;
+    letter-spacing: .025em;
+    font-weight: 500;
+    padding-left: 1.75rem;
+    padding-right: 1.75rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    align-items: center;
+    text-decoration: inherit;
+    border-radius: 4px;
+    &:focus{
+            outline: none;
+            box-shadow: 0 0 0 2px lightskyblue;
+    }   
+}
+
+.btn-1 {
+    background: linear-gradient(90deg,#15829d,#44abc4 50%,#67cae1),linear-gradient(0deg,#fff,#fff);
+    text-decoration: none;
+    &:hover {
+        background: linear-gradient(90deg, #62d4ed, #44abc4, #2ba2c0 50%),linear-gradient(0deg,#fff,#fff);
+        box-shadow:
+            1px 1px rgb(184, 201, 215),
+            2px 2px rgb(184, 201, 215),
+            3px 3px rgb(184, 201, 215),
+            4px 4px rgb(184, 201, 215),
+            5px 5px rgb(184, 201, 215);
+        -webkit-transform: translateX(-5px);
+        transform: translateX(-5px);
+    }
+}
+
+.btn-2 {
+    border: solid 2px $main-color;
+    background: none;
+    color: $main-color;
+    text-decoration: none;
+    width: 170px;
+    &:hover {
+        color: $second-color;
+        background-color: $main-color;
+        box-shadow:
+            1px 1px rgb(184, 201, 215),
+            2px 2px rgb(184, 201, 215),
+            3px 3px rgb(184, 201, 215),
+            4px 4px rgb(184, 201, 215),
+            5px 5px rgb(184, 201, 215);
+        -webkit-transform: translateX(-5px);
+        transform: translateX(-5px);
+    }
+
+}

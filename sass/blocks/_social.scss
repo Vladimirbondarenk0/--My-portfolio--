@@ -1,0 +1,43 @@
+.social {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 450px;
+    height: 30px;
+
+    &__descr {
+        font-weight: 700;
+        font-size: 16px;
+        color: $main-color;
+    }
+
+    &__divider {
+        content: '';
+        width: 70px;
+        height: 2px;
+        background-color: $main-color;
+    }
+
+    &__link {
+        display: flex;
+        justify-content: space-around;
+        transition: transform 0.5s;
+        max-width: 28px;
+        max-height: 28px;
+
+        img {
+            width: 28px;
+            transition: transform 0.5s;
+            transform: rotate(90deg);
+        }
+
+        &:hover {
+            transform: translateY(-7px);
+        }
+    }
+
+}

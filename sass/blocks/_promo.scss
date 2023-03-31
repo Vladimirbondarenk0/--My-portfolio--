@@ -1,0 +1,111 @@
+.promo {
+    min-height: 100vh;
+    // height: 100vh;
+    position: relative;
+    background: url('../img/cherno-goluboi-fon-2_1.png') no-repeat 50%/cover;
+    padding-top: 70px;
+
+    .container {
+        width: 1300px;
+    }
+
+    &__logo {
+        img {
+            display: block;
+            width: 170px;
+        }
+    }
+
+    &__welcome {
+        font-size: 20px;
+        line-height: 30px;
+        text-align: center;
+        color: $main-color;
+    }
+
+    &__about_me {
+        margin: 0 auto;
+        margin-top: 75px;
+        width: 590px;
+        border: solid 2px $main-color;
+        padding: 25px;
+        background-color: rgba(79, 91, 101, 0.165);
+
+        .title,
+        .subtitle {
+            text-align: center;
+            color: $main-color;
+        }
+
+        .subtitle {
+            font-weight: 300;
+        }
+
+        .descr {
+            margin-top: 20px;
+            font-size: 17px;
+            font-weight: 500;
+            line-height: 10px;
+
+            span {
+                text-align: center;
+                color: rgb(115, 128, 171);
+            }
+        }
+    }
+
+    .sandwich {
+        width: 60px;
+        height: 60px;
+        background-color: rgba(197, 219, 237, 0.1);
+        cursor: pointer;
+        padding: 16px 7px;
+        border-radius: 4px;
+        transition: transform 0.5s;
+        transition: border-left 50ms ease 0s, border-top 0.1s ease 0.1s, border-right 0.1s ease .2s, border-bottom 50ms ease .3s, background-color 0.8s;
+
+
+        .sw-top,
+        .sw-mid,
+        .sw-foot {
+            width: auto;
+            height: 3px;
+            margin-top: 5px;
+            background: rgb(255, 255, 255);
+            border-radius: 4px;
+            cursor: pointer;
+            transition: transform 0.5s;
+        }
+
+
+        &:hover {
+            background-color: $second-color;
+            border-left: 1px solid $main-color;
+            border-top: 1px solid $main-color;
+            border-right: 1px solid $main-color;
+            border-bottom: 1px solid $main-color;
+        }
+
+    }
+
+
+    &__btns {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        margin-top: 30px;
+        transition: 0.5s;
+
+    }
+
+    a {
+        &:hover {
+            text-decoration: none;
+        }
+    }
+
+    .visible {
+        display: flex;
+    }
+
+}

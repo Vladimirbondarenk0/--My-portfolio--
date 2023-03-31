@@ -1,0 +1,195 @@
+.contact {
+    min-height: 600px;
+    padding: 70px 0px 0px 0px;
+    background-color: #e2ebf2;
+
+    &__wrapper {
+        padding: 0 60px 50px 60px;
+        display: grid;
+        grid-template-columns: 420px 485px;
+        grid-template-rows: 576px;
+        justify-content: space-between;
+        column-gap: 0px;
+    }
+
+    &__foto {
+        height: 100%;
+        object-fit: cover;
+        box-shadow: rgba(9, 9, 9, 0.353) 5px 5px 5px 5px;
+    }
+
+    &__subheader {
+        font-weight: 700;
+        color: $second-color;
+    }
+
+    &__title {
+        color: $second-color;
+        font-weight: 800;
+        line-height: 70px;
+        position: relative;
+        @include before_circle;
+    }
+
+    &__divider {
+        margin: 0;
+    }
+
+    &__text {
+        margin-top: 20px;
+        font-weight: 700;
+        color: $second-color;
+    }
+
+    &__social {
+        margin-top: 20px;
+        text-decoration: none;
+
+        &__link {
+            margin-right: 20px;
+            text-decoration: none;
+            &:last-child {
+                margin: 0;
+            }
+
+            svg,
+            img {
+                height: 25px;
+                width: 25px;
+                transition: transform 0.5s;
+
+                &:hover {
+                    transform: translateY(-5px);
+                }
+            }
+        }
+    }
+
+    &__form {
+        padding-top: 30px;
+        display: grid;
+        grid-template: 45px 170px 45px / repeat(2, auto);
+        column-gap: 25px;
+    }
+
+    &__input {
+        position: relative;
+
+        input {
+            width: 100%;
+            height: 100%;
+            padding: 0 20px;
+            font-weight: 600;
+            font-size: 14px;
+            color: rgb(75, 75, 75);
+            border-color: #b5b5b5;
+            border-style: solid;
+            border-width: 1px;
+            border-radius: 13px;
+
+            &:focus {
+                border: none;
+                outline: none;
+                box-shadow: 0 0 0 2px rgb(75, 75, 75);
+                border-radius: 2px;
+            }
+        }
+    }
+
+    &__textarea {
+        margin-top: 30px;
+        position: relative;
+        grid-column: 1 / 3;
+
+        textarea {
+            width: 100%;
+            height: 100%;
+            padding: 20px;
+            font-weight: 600;
+            font-size: 14px;
+            color: rgb(75, 75, 75);
+            resize: none;
+            border-radius: 13px;
+            border-color: #b5b5b5;
+
+            &:focus {
+                border: none;
+                outline: none;
+                box-shadow: 0 0 0 2px rgb(75, 75, 75);
+                border-radius: 2px;
+            }
+        }
+
+    }
+
+    &__triggers {
+        grid-column: 1 / 3;
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(2, 100%);
+        column-gap: 35px;
+        row-gap: 10px;
+
+        .btn_trg {
+            grid-column: 1 / 3;
+            grid-row: 2 / 3;
+
+            .btn {
+                border-radius: 8px;
+            }
+        }
+    }
+
+    &__policy {
+        grid-column: 1 / 3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 13px;
+
+        input {
+            margin-right: 10px;
+            cursor: pointer;
+        }
+    }
+
+
+    label, .second-label{
+        position: absolute;
+        top: 35px;
+        left: 12px;
+        font-size: 12px;
+        font-weight: 500;
+        margin-bottom: 0;
+        border-radius: 5px;
+        padding: 0 8px;
+        color: rgb(159, 2, 2);
+        background-color: #fff;
+    }
+
+    .second-label{
+        top: -9px;
+        color: $second-color;
+    }
+
+    .btn {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        font-size: 18px;
+    }
+
+    .uzor {
+        width: 649px;
+        height: 90px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .creator {
+        text-align: center;
+        margin-bottom: 0;
+        margin-top: -7px;
+    }
+}

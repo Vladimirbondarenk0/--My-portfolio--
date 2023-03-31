@@ -1,0 +1,119 @@
+.resume {
+    padding: 60px 0px 90px 0px;
+    background-color: #e2f3ff;
+
+    &__subtitle {
+        text-align: center;
+        font-weight: 800;
+        position: relative;
+        @include before_circle;
+
+        &:before {
+            top: -5px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+
+    &__title {
+        color: $second-color;
+        text-align: center;
+    }
+
+    &__wrapper {
+        padding: 60px 60px 0 60px;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(auto, 450px));
+        column-gap: 135px;
+    }
+
+    &__item-title {
+        color: $second-color;
+        font-size: 20px;
+        position: relative;
+        padding-left: 35px;
+
+        &:before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: -9px;
+            width: 15px;
+            height: 15px;
+            background-color: $second-color;
+            border-radius: 100%;
+            // box-shadow: rgba(0, 0, 0, 0.574) 0px 0px 25px 1px;
+            opacity: .5;
+        }
+    }
+
+    ul {
+        list-style-type: none;
+        padding-left: 0;
+
+        li {
+            position: relative;
+
+            &:before {
+                content: '';
+                width: 2px;
+                height: 100%;
+                position: absolute;
+                top: -20px;
+                left: -2px;
+                background-color: #14224075;
+            }
+        }
+    }
+
+    &-item {
+        position: relative;
+
+        &:before {
+            content: '';
+            width: 41px;
+            height: 2px;
+            position: absolute;
+            top: 74px;
+            background-color: #14224075;
+
+        }
+
+        &-head {
+            position: relative;
+            padding: 45px 0 0 100px;
+        }
+
+        &-body {
+            padding: 12px 0 0 43px;
+        }
+
+        &-icon {
+            position: absolute;
+            top: 68px;
+            left: 56px;
+            @include before_circle;
+
+            &:before {
+                top: -12px;
+                left: -15px;
+            }
+        }
+
+        &-subtitle {
+            font-weight: 600;
+        }
+
+        &-location {
+            font-size: 12px;
+            line-height: 18px;
+        }
+
+        &-body {
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 18px;
+        }
+    }
+}
